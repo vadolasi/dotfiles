@@ -14,6 +14,21 @@
 [![Swaylock](https://img.shields.io/badge/Swaylock-f9e2af?style=for-the-badge "Swaylock - Screen locking utility for Wayland compositors")](https://github.com/mortie/swaylock-effects)
 [![Dunst](https://img.shields.io/badge/Dunst-fab387?style=for-the-badge "Dunst - Lightweight and customizable notification daemon")](https://github.com/dunst-project/dunst)
 
+## Installation
+
+- Clone the repository
+```
+git clone --bare https://github.com/sameemul-haque/dotfiles.git $HOME/.dotfiles
+```
+- Install required packages
+```
+pacman -Syu hyprland hyprpaper waybar sddm alacritty dunst fastfetch
+
+yay -Syu swaylock-effects-git rofi-lbonn-wayland-git sddm-sugar-candy-git
+```
+.....
+<!--@TODO sddm theme firefox theme hyprland bind etc-->
+
 ## Preview
 [preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/3f3ad231-ba5c-42fc-9d01-6466e4550158 "dotfiles preview")
 
