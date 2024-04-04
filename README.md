@@ -26,8 +26,15 @@ pacman -Syu hyprland hyprpaper waybar sddm alacritty dunst fastfetch
 
 yay -Syu swaylock-effects-git rofi-lbonn-wayland-git sddm-sugar-candy-git
 ```
-.....
-<!--@TODO sddm theme firefox theme hyprland bind etc-->
+- Update sddm theme
+```
+cp -r ~/.sddm-themes/Sugar-Candy/* /usr/share/sddm/themes/sugar-candy/
+```
+- Update firefox theme
+```
+.whiteSur-firefox-theme/install.sh
+```
+- Change hyprland bindings as you need in `.config/hypr/bind.conf`
 
 ## Preview
 [preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/3f3ad231-ba5c-42fc-9d01-6466e4550158 "dotfiles preview")
