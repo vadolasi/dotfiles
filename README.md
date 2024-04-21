@@ -22,15 +22,21 @@ git clone --bare https://github.com/sameemul-haque/dotfiles.git $HOME/.dotfiles
 ```
 - Install required packages
 ```
-pacman -Syu hyprland hyprpaper waybar sddm alacritty dunst fastfetch
+pacman -Syu --needed hyprland hyprpaper waybar sddm alacritty dunst fastfetch ttf-firacode-nerd ttf-jetbrains-mono-nerd pamixer
 
-yay -Syu swaylock-effects-git rofi-lbonn-wayland-git sddm-sugar-candy-git
+yay -S --needed swaylock-effects-git rofi-lbonn-wayland-git sddm-sugar-candy-git brillo
+```
+- checkout the `mocha` branch (remove or take backup of conflicting files)
+```
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+config checkout mocha
 ```
 - Update sddm theme
 ```
 cp -r ~/.sddm-themes/Sugar-Candy/* /usr/share/sddm/themes/sugar-candy/
 ```
-- Update firefox theme
+- Update firefox theme (running this script will close the firefox)
 ```
 .whiteSur-firefox-theme/install.sh
 ```
