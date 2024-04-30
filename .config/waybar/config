@@ -60,7 +60,7 @@
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "<tt>{calendar}</tt>",
+        "tooltip-format": "{calendar}",
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%I:%M %p}"
     },
